@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+{% block content %}
+	
+
+	<div class="result">
+		{% if prediction == 'Negative' %}
+		<h2 style="color:red;" style='font-size:100px;'>&#128577;Negative</h2>
+		{% elif prediction == 'Neutral' %}
+		<h2 style="color:black;" style='font-size:100px;'>&#128528;Neutral</h2>
+		{% elif prediction == 'Positive' %}
+		<h2 style="color:black;" style='font-size:100px;'>&#128578;Positive</h2>
+		{% endif %}
+
+	</div>
+
+{% endblock content %}
